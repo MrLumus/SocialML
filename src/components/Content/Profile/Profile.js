@@ -1,6 +1,7 @@
 import React from "react";
+import "./Profile.css"
 
-const Profile = () => {
+const Profile = (props) => {
   return (
     <div className="content__profile profile">
       <div className="profile__image-wrapper">
@@ -11,15 +12,12 @@ const Profile = () => {
         />
       </div>
       <div className="profile__info">
-        <p className="profile__name">ivan b.</p>
+        <p className="profile__name">{props.name}</p>
         <ul className="profile__description-list">
-          <li className="profile__list-item">Date of Birth: 18 May</li>
-          <li className="profile__list-item">City: Orekhovo-Zuevo</li>
-          <li className="profile__list-item">Education: GGTU'16</li>
-          <li className="profile__list-item">
-            Web Site:{" "}
-            <a href="https://it-kamasutra.com">https://it-kamasutra.com</a>
-          </li>
+          <li className="profile__list-item">Date of Birth: {props.dateOfBirth}</li>
+          <li className="profile__list-item">City: {props.city}</li>
+          <li className="profile__list-item">Education: {props.education}</li>
+          <li className="profile__list-item">Web Site: <a href={props.website}>{props.website}</a></li>
         </ul>
       </div>
     </div>

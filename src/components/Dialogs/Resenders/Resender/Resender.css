@@ -1,0 +1,43 @@
+.dialogs__dialog-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.dialogs__dialog {
+    padding: 5px 12px;
+    font-size: 14px;
+    color: rgb(80, 80, 80);
+    border-radius: 5px;
+    height: 40px;
+    line-height: 30px;
+    align-self: center;
+    position: relative;
+    transition: .2s;
+}
+.dialogs__dialog:not(.dialogs__dialog_active):hover{
+    background-color: rgb(204, 204, 204);
+}
+
+.dialogs__dialog::before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 17px;
+    width: 5px;
+    height: 5px;
+    background-color: rgb(80, 80, 80);
+    border-radius: 50%;
+}
+
+.dialogs__dialog_active{
+    padding: 5px 0;
+    margin-left: -10px;
+    font-size: 16px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: rgb(80, 80, 80);
+}
+
+.dialogs__dialog_active.dialogs__dialog::before{
+    display: none;
+}

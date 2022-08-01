@@ -1,0 +1,36 @@
+.profile {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: minmax(auto, 120px) 1fr;
+    grid-template-columns: minmax(auto, 120px) 1fr;
+}
+
+.profile__image-wrapper {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.profile__image {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.profile__info {
+    color: rgb(80, 80, 80);
+}
+
+.profile__name {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.profile__list-item {
+    margin-bottom: 7px;
+}
+
+.profile__list-item:last-child {
+    margin-bottom: 0;
+}

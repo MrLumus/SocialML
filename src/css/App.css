@@ -73,3 +73,13 @@
   -ms-grid-row: 5;
   -ms-grid-column: 7;
 }
+
+.content {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  max-width: 900px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+}

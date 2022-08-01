@@ -7,12 +7,12 @@ import "./Content.css";
 
 const Content = () => {
   return (
-    <section className="content">
+    <div className="content__wrapper">
       <HeaderImg />
-      <Profile />
+      <Profile name="ivan b." dateOfBirth="18 May" city="Orekhovo-Zuevo" education="GGTU'16" website="https://vk.com/mrlumus"/>
       <PostCreate />
       <Posts />
-    </section>
+    </div>
   );
 };
 

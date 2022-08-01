@@ -1,0 +1,7 @@
+.messages {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    display: grid;
+    gap: 20px;
+    overflow-y: hidden;
+}

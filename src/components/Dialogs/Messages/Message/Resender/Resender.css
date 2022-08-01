@@ -1,0 +1,17 @@
+.message__resender {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.message__photo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.message__name {
+    justify-self: start;
+    margin: 0;
+    padding-top: 10px;
+}
