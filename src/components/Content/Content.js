@@ -1,9 +1,9 @@
 import React from "react";
-import HeaderImg from "./Content/HeaderImg";
-import Profile from "./Content/Profile";
-import PostCreate from "./Content/PostCreate";
-import Posts from "./Content/Posts";
-import "./../css/Content.css";
+import HeaderImg from "./HeaderImg/HeaderImg";
+import Profile from "./Profile/Profile";
+import PostCreate from "./PostCreate/PostCreate";
+import Posts from "./Posts/Posts";
+import "./Content.css";
 
 const Content = () => {
   return (

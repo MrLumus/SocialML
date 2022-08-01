@@ -35,3 +35,6 @@
   .nav__item:nth-last-child(2) {
     margin-bottom: 50px;
   }
+  .nav__item a{
+    color: inherit;
+  }
