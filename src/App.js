@@ -11,16 +11,27 @@ import Settings from "./components/Settings/Settings";
 import "./css/nullstyle.css";
 import "./css/App.css";
 
-function App() {
+function App(props) {
   return (
     <BrowserRouter>
       <div className="wrapper">
         <Header />
-        <Sidebar />
+        <Sidebar state={props.state.sidebar}/>
         <section className="content">
           <Routes>
-            <Route path="/profile" element={<Content />} />
-            <Route path="/dialogs/*" element={<Dialogs />} />
+            <Route
+              path="/profile"
+              element={<Content state={props.state.profilePage} dispatch={props.dispatch} />}
+            />
+            <Route
+              path="/dialogs/*"
+              element={
+                <Dialogs
+                  state={props.state.dialogsPage}
+                  dispatch={props.dispatch}
+                />
+              }
+            />
             <Route path="/news" element={<News />} />
             <Route path="/music" element={<Music />} />
             <Route path="/settings" element={<Settings />} />

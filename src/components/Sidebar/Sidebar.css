@@ -6,4 +6,8 @@
   padding: 20px;
   background-color: #fff;
   border-radius: 15px;
+  display: grid;
+  grid-auto-flow: row;
+  align-content: start;
+  row-gap: 20px;
 }

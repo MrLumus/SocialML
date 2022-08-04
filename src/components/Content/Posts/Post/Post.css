@@ -14,6 +14,35 @@
     height: 40px;
     border-radius: 50%;
     background-color: #FF0;
+    align-self: start;
+}
+
+.post-wrapper{
+    display: grid;
+    grid-template-columns: 1fr minmax(auto, 50px);
+    column-gap: 20px;
+}
+
+.post__likes{
+    position: relative;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+.post__likes:hover::before{
+    color: #F00;
+}
+
+.post__likes::before{
+    content: '❤';
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: .2s;
+}
+
+.post__likes_active.post__likes::before{
+    color: #F00;
 }
 
 .post__text {

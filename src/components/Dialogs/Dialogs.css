@@ -3,7 +3,9 @@
     grid-template-rows: minmax(auto, 50px) 1fr;
     grid-template-columns: 1fr 2fr;
     gap: 40px;
+    row-gap: 0;
     position: relative;
+    min-height: 100%;
 }
 
 .dialogs__header {

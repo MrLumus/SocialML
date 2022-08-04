@@ -4,7 +4,7 @@
 
 .message__text {
     margin-left: 30px;
-    padding: 10px;
+    padding: 12px;
     border: 1px solid #b9b9b9;
     background-color: #e9e9e9;
     border-radius: 10px;
@@ -16,7 +16,7 @@
     content: '';
     position: absolute;
     left: 1.5px;
-    top: 13px;
+    top: 10px;
     width: 15px;
     height: 15px;
     border-top: 1px solid #b9b9b9;

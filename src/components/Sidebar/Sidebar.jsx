@@ -1,18 +1,14 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
-import MenuItem from './MenuItem/MenuItem';
+import Friends from './Friends/Friends';
+import Menu from './Menu/Menu';
 import "./Sidebar.css";
 
-const Sidebar = () => {
+const Sidebar = (props) => {
     return (
       <nav className="nav">
-        <div className="nav__list">
-          <MenuItem name="Profile" link="/profile"/>
-          <MenuItem name="Messages" link="/dialogs"/>
-          <MenuItem name="News" link="/news"/>
-          <MenuItem name="Music" link="/music"/>
-          <MenuItem name="Settings" link="/settings"/>
-        </div>
+        <Menu />
+        <Friends friends={props.state.friends} />
       </nav>
     );
 }
