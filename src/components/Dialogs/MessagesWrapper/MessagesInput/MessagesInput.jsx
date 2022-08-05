@@ -1,18 +1,15 @@
 import React from "react";
 import "./MessagesInput.css";
-import { messageTextChangeActionCreator, addMessageActionCreator } from "./../../../../redux/dialogsReducer";
 
 const MessagesInput = (props) => {
 
   let sendMessage = () => {
-    const action = addMessageActionCreator();
-    props.dispatch(action);
+    props.sendMessage();
   }
 
   const changeMessageText = (e) => {
     const messageText = e.target.value;
-    const action = messageTextChangeActionCreator(messageText);
-    props.dispatch(action);
+    props.changeMessageText(messageText);
   }
 
   return (

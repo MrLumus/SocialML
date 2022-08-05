@@ -7,7 +7,7 @@ const Resender = (props) => {
       <div className="message__photo">
         <img
           src={props.photoSrc}
-          alt="Photo"
+          alt="Avatar"
         />
       </div>
       <p className="message__name">{props.name}</p>

@@ -1,5 +1,4 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import Resender from "./Resender/Resender";
 import "./Resenders.css";
 
