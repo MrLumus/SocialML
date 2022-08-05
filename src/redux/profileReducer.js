@@ -6,16 +6,19 @@ let initialState = {
   posts: [
     { id: 1, message: "Hi, how are you?", likes: 10 },
     { id: 2, message: "I already know HTML / CSS / JS very well", likes: 2 },
-    { id: 3, message: "I'm learning React", likes: 52 },
+    { id: 3, message: "I'm learning React", likes: 152 },
     { id: 4, message: "I will learn Redux", likes: 0 },
   ],
 };
 
 const profileReducer = (state = initialState, action) => {
-    let newState = {...state}
+    
 
     switch (action.type) {
-      case ADD_POST:
+      case ADD_POST: {
+        let newState = { ...state };
+        newState.posts = [...state.posts];
+
         let posts = newState.posts;
         const id = posts[posts.length - 1].id + 1;
         const post = {
@@ -27,13 +30,16 @@ const profileReducer = (state = initialState, action) => {
         posts.push(post);
         newState.postText = "";
         return newState;
+      }
 
-      case CHANGE_POST_TEXT:
+      case CHANGE_POST_TEXT:{
+        let newState = { ...state };
         newState.postText = action.newPostText;
         return newState;
+      }
 
       default:
-        return newState;
+        return state;
     }
 }
 

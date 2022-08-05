@@ -5,12 +5,10 @@ import MessagesInputContainer from "./MessagesInput/MessagesInputContainer";
 
 const MessagesWrapper = (props) => {
 
-  let state = props.store.getState();
-
   return (
     <div className="messages">
-      <Messages msgs={state.dialogsPage.messages} />
-      <MessagesInputContainer store={props.store} />
+      <Messages msgs={props.messages} />
+      <MessagesInputContainer />
     </div>
   );
 };
