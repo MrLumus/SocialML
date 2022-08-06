@@ -10,6 +10,7 @@ import "./css/nullstyle.css";
 import "./css/App.css";
 import ContentContainer from "./components/Content/ContentContainer";
 import DialogsContainer from "./components/Dialogs/DialogsContainer";
+import FindUsers from "./components/FindUsers/FindUsers";
 
 function App(props) {
 
@@ -32,6 +33,7 @@ function App(props) {
             />
             <Route path="/news" element={<News />} />
             <Route path="/music" element={<Music />} />
+            <Route path="/users" element={<FindUsers />} />
             <Route path="/settings" element={<Settings />} />
           </Routes>
         </section>

@@ -7,7 +7,7 @@ const Friends = (props) => {
         <div className='friends-wrapper'>
             <p className='friends__header'>Friends</p>
             <div className='friends'>
-                { props.friends.map(friend => (<Friend name={friend.name} photoUrl={friend.photoUrl} />)) }
+                { props.friends.map(friend => (<Friend name={friend.name} key={friend.id} photoUrl={friend.photoUrl} />)) }
             </div>
         </div>
     )

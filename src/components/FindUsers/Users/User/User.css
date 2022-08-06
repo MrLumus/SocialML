@@ -1,0 +1,104 @@
+.users__user  {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: minmax(30px, auto) minmax(300px, 1fr);
+    gap: 20px;
+}
+
+.user__photo{
+    display: grid;
+    grid-auto-flow: row;
+    justify-items: center;
+    align-items: center;
+    width: 90px;
+}
+
+.user__avatar{
+    align-self: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+/*.user__avatar::before{
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    background-image: url("https://yur-info.ru/media/k2/items/cache/97d2860871f3d35e35f6eb0477d3015a_XL.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}*/
+
+
+.user__avatar img {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.user__follow  {
+    align-self: flex-start;
+    border: none;
+    background-color: #2d2d2d;
+    color: #FFF;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .2s all;
+    font-size: 12px;
+}
+
+.user__follow:hover {
+    background-color: #575757;
+}
+
+.user__description  {
+    padding: 10px 20px;
+    border: 1px solid #b9b9b9;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    min-height: 80%;
+    align-self: center;
+}
+
+.user__description-main  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.user__name  {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.user__status  {
+    color: #b9b9b9;
+    font-size: 16px;
+}
+
+.user__description-location  {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.user__description-location_location{
+    font-size: 20px;
+    font-size: 20px;
+    font-weight: 800;
+    text-align: right;
+}

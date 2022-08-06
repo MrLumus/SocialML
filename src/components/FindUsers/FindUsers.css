@@ -1,0 +1,13 @@
+.findUsers {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-rows: auto 1fr;
+    gap: 20px;
+}
+
+.findUsers__header  {
+    font-size: 20px;
+    color: #2d2d2d;
+    font-weight: 800;
+    text-transform: uppercase;
+}

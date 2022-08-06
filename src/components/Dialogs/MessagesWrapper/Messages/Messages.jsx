@@ -6,7 +6,7 @@ const Messages = (props) => {
     return (
       <div className="messages__wrapper">
         {props.msgs.map((msg) => (
-          <Message from={msg.from} message={msg.message} />
+          <Message from={msg.from} key={msg.id} message={msg.message} />
         ))}
       </div>
     );

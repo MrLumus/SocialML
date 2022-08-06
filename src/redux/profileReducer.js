@@ -7,7 +7,7 @@ let initialState = {
     { id: 1, message: "Hi, how are you?", likes: 10 },
     { id: 2, message: "I already know HTML / CSS / JS very well", likes: 2 },
     { id: 3, message: "I'm learning React", likes: 152 },
-    { id: 4, message: "I will learn Redux", likes: 0 },
+    { id: 4, message: "I will learn Redux", likes: 97 },
   ],
 };
 
@@ -16,26 +16,23 @@ const profileReducer = (state = initialState, action) => {
 
     switch (action.type) {
       case ADD_POST: {
-        let newState = { ...state };
-        newState.posts = [...state.posts];
 
-        let posts = newState.posts;
+        let posts = state.posts;
         const id = posts[posts.length - 1].id + 1;
-        const post = {
-          id: id,
-          message: newState.postText,
-          likes: 0,
-        };
+        const post = { id: id, message: state.postText, likes: 0 };
 
-        posts.push(post);
-        newState.postText = "";
-        return newState;
+        return { 
+          ...state,
+          postText: "",
+          posts: [...state.posts, post]
+        };
       }
 
       case CHANGE_POST_TEXT:{
-        let newState = { ...state };
-        newState.postText = action.newPostText;
-        return newState;
+        return { 
+          ...state,
+          postText: action.newPostText
+        };
       }
 
       default:

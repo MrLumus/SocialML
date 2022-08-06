@@ -9,6 +9,7 @@ const Menu = (props) => {
       <MenuItem name="Messages" link="/dialogs" />
       <MenuItem name="News" link="/news" />
       <MenuItem name="Music" link="/music" />
+      <MenuItem name="Find users" link="/users" />
       <MenuItem name="Settings" link="/settings" />
     </div>
   );

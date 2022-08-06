@@ -5,7 +5,7 @@ import "./Resenders.css";
 const Resenders = (props) => {
   return (
     <div className="dialogs">
-      {props.resenders.map(res => <Resender name={res.name} id={res.id} />)}
+      {props.resenders.map(res => <Resender name={res.name} key={res.id} id={res.id} />)}
     </div>
   );
 };
