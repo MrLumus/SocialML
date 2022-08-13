@@ -33,7 +33,7 @@ function App(props) {
             />
             <Route path="/news" element={<News />} />
             <Route path="/music" element={<Music />} />
-            <Route path="/users" element={<FindUsers />} />
+            <Route path="/users/*" element={<FindUsers />} />
             <Route path="/settings" element={<Settings />} />
           </Routes>
         </section>

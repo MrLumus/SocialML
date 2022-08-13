@@ -11,7 +11,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 const rerenderEntireTree = (state) => {
   root.render(
-    <React.StrictMode>
+    //<React.StrictMode>
       <Provider store={store}>
         <App
           store={store}
@@ -19,7 +19,7 @@ const rerenderEntireTree = (state) => {
           dispatch={store.dispatch.bind(store)}
         />
       </Provider>
-    </React.StrictMode>
+    //</React.StrictMode>
   );
 };
 store.subscribe(() => {

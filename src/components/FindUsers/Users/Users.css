@@ -2,7 +2,7 @@
     display: grid;
     grid-auto-flow: row;
     gap: 20px;
-    max-height: calc(100vh - 240px);
+    max-height: calc(100vh - 275px);
     overflow: auto;
     padding: 0 20px;
 }

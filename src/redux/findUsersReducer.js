@@ -1,6 +1,7 @@
 const FOLLOW = "FOLLOW";
 const UNFOLLOW = "UNFOLLOW";
 const SET_USERS = "SET-USERS";
+const ADD_USERS = "ADD-USERS";
 
 let initialState = {
     users: [
@@ -34,9 +35,13 @@ const findUsersReducer = (state = initialState, action) => {
     case SET_USERS:
       return {
         ...state,
-        users: [...state.users, ...action.users]
+        users: [...action.users]
       }
-
+      case ADD_USERS:
+        return{
+          ...state,
+          users: [...state.users, ...action.users]
+        }
 
     default:
       return state;
@@ -59,6 +64,12 @@ export const unfollowActionCreator = (userID) => {
 export const setUsersActionCreator = (users) => {
   return {
     type: SET_USERS,
+    users: users
+  }
+}
+export const addUsersActionCreator = (users) => {
+  return {
+    type: ADD_USERS,
     users: users
   }
 }

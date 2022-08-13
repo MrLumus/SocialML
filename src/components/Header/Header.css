@@ -43,9 +43,19 @@
   z-index: 2;
   filter: grayscale(1);
 }
-
 .header__search {
   padding: 5px 10px 5px 30px;
   border-radius: 5px;
   position: relative;
+  margin-right: 10px;
+}
+.header__search-btn{
+  padding: 5px 10px;
+  background-color: #FFF;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .2s all;
+}
+.header__search-btn:hover{
+  background-color: #c9c9c9;
 }

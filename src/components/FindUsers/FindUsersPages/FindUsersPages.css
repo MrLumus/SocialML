@@ -1,0 +1,32 @@
+.findUsers__pages{
+    display: flex;
+    justify-content: center;
+}
+.findUsers__page{
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 800;
+    border-radius: 5px;
+    width: 17px;
+    height: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s;
+}
+.findUsers__page-wrapper{
+    margin-right: 5px;
+}
+.findUsers__page-wrapper:last-child{
+    margin-right: 0;
+}
+.findUsers__page-wrapper a{
+    color: #2c2c2c;
+}
+.findUsers__page:not(.findUsers__page_active):hover{
+    background-color: #b9b9b9;
+}
+a.findUsers__page_active{
+    background-color: #2c2c2c;
+    color: #FFF;
+}
